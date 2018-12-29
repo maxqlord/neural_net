@@ -119,7 +119,6 @@ def calc_w(list1, size):
 
 def find_xor():
     correct_weights = createData(2)
-    print(correct_weights)
     x1 = Input()
     x2 = Input()
     #print(correct_weights)
@@ -176,9 +175,10 @@ def find_xor():
      #               xnor_nodes.append([node_1,node_2,node_3])
      #               xnor_nodes_weights.append([(node_1.weights,node_1.thresh),(node_2.weights,node_2.thresh),(node_3.weights,node_3.thresh)])
      #               xnor_nodes_numbers.append([i,j,k])
-    print(correct_weights)
-    print("xor: ")
+    #print(correct_weights)
+    print("xor nodes weights: ")
     print(xor_nodes_weights)
+    print("xor nodes numbers: ")
     print(xor_nodes_numbers)
     #print("xnor: ")
     #print(xnor_nodes)
@@ -326,7 +326,7 @@ def search(k):
         else:
             weights = old
     #print(error)
-    print(weights)
+    #print(weights)
     return counter
 def check_search():
     total_arr = []
@@ -347,7 +347,7 @@ def check_search():
     #graph_iterations(total_arr)
 
 find_xor()
-#circle()
+circle()
 #print(guess(4.65,.5))
 #search(7.5)
 #check_search()
